@@ -1,0 +1,8 @@
+class Solution(object):
+    def longestCommonSubsequence(self, text1, text2):
+        same = set(text1) & set(text2)
+        if same:
+            result = ''.join(same)
+            print(result)
+        else:
+            print("0")
